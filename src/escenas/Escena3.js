@@ -76,7 +76,7 @@ class Escena3 extends Phaser.Scene{
              this.bombs = this.physics.add.group({
                 key: 'bomb',
                 repeat: 3, // cantidad de estrellas
-                setXY: { x: 180, y: 72, stepX: 280, stepY:210 } 
+                setXY: { x: 250, y: 152, stepX: 150, stepY:97 } 
             });
             
             this.bombs.children.iterate(function (bomb) {
@@ -114,9 +114,8 @@ class Escena3 extends Phaser.Scene{
             this.score += 10;
             this.scoreText.setText('Score: ' + this.score);
                     if(this.score > 70){
-                        //this.scene.start('Escena2');
-                        //this.score = 0;
-                        gameOver=true;
+                        this.scene.start('Escena4');
+                        this.score = 0;
                     }
                 }
 
@@ -124,8 +123,7 @@ class Escena3 extends Phaser.Scene{
             this.physics.pause();
             player.setTint(0xff0000);
             player.anims.play('turn');
-            gameOver = true;
-           // this.scene.start('Escena2');
+            this.scene.start('Escena5');
           }
                     
 }

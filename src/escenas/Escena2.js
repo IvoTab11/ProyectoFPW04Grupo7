@@ -141,8 +141,7 @@ class Escena2 extends Phaser.Scene{
             this.physics.pause();
             player.setTint(0xff0000);
             player.anims.play('turn');
-            gameOver = true;
-           // this.scene.start('Escena2');
+            this.scene.start('Escena5');
           }
                     
 }

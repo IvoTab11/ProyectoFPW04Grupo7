@@ -11,11 +11,11 @@ class Escena4 extends Phaser.Scene{
 
     create(){
         this.add.image(400, 300, 'ganar').setScale(2);
-        // this.input.keyboard.on('keydown-SPACE', function () {
-        //     // Cambiar a la Escena2
-        //     this.scene.start('Escena2');
-        // }, this);
-    }
+        this.input.keyboard.on('keydown-SPACE', function () {
+         // Cambiar a la Escena2 (restart)
+           this.scene.start('Escena2');
+        }, this);
+    } 
 
     // update(){
     //     if(Phaser.Input.Keyboard.JustDown(this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE))){
