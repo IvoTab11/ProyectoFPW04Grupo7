@@ -131,8 +131,9 @@ class Escena2 extends Phaser.Scene{
             bomb.setVelocity(Phaser.Math.Between(-200, 200), 20);
                     }*/
                     if(this.score > 20){
-                        this.scene.start('Escena4');
-                        this.score = 0;
+
+                        this.scene.start('Escena3',{score:this.score});
+
                     }
                 }
 
