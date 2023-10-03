@@ -11,7 +11,7 @@ class Escena3 extends Phaser.Scene{
     }   
 
     preload(){
-        this.load.image('nightSky','../public/img/scaryNight.jpg');
+        this.load.image('nightSky','../public/img/night-02.jpg');
         this.load.image('ground', '../public/img/platform.png');
         this.load.image('star','../public/img/star.png');
         this.load.image('bomb', '../public/img/bomb.png'); 

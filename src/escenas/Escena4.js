@@ -5,7 +5,7 @@ class Escena4 extends Phaser.Scene{
     }
 
     preload(){
-        this.load.image('ganar', '../public/img/ganar.jpg', {frameWidth: 200, frameHeight: 200})
+        this.load.image('ganar', '../public/img/win.jpg', {frameWidth: 200, frameHeight: 200})
 
     }
 

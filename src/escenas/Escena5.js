@@ -5,7 +5,7 @@ class Escena5 extends Phaser.Scene{
     }
 
     preload(){
-        this.load.image('perder', '../public/img/gameOver.png', {frameWidth:200, frameHeight:200})
+        this.load.image('perder', '../public/img/over-02.jpg', {frameWidth:200, frameHeight:200})
     }
 
     create(){
