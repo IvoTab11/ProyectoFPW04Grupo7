@@ -139,6 +139,7 @@ class Escena2 extends Phaser.Scene{
 
         hitBomb(player, bomb) {
             this.physics.pause();
+            this.score=0;
             player.setTint(0xff0000);
             player.anims.play('turn');
             this.scene.start('Escena5');
